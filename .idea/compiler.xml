@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="CacheApp" />
+        <module name="SpringCache" />
         <module name="SpringEhCache" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringEhCache" target="1.5" />
+      <module name="CacheApp" target="1.8" />
+      <module name="SpringCache" target="1.8" />
+      <module name="SpringEhCache" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

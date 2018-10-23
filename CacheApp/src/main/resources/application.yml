@@ -1,0 +1,6 @@
+server:
+  port: 9000
+management:
+  server:
+    port: 9001
+
