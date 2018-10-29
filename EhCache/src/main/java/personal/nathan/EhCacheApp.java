@@ -1,16 +1,19 @@
-package perosonal.nathan;
+package personal.nathan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 /**
- * Created by za-zhangwei002 on 2018/10/23.
+ * Description:
+ * <p>
+ * Created by nathan.z on 18-10-28.
  */
 @SpringBootApplication
-public class CacheApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(CacheApplication.class, args);
-    }
+@EnableCaching
+public class EhCacheApp {
 
+    public static void main(String[] args) {
+        SpringApplication.run(EhCacheApp.class, args);
+    }
 }
