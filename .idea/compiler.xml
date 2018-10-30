@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CacheApp" />
+        <module name="CacheService" />
         <module name="EhCache" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CacheApp" target="1.8" />
+      <module name="CacheProvider" target="1.8" />
+      <module name="CacheService" target="1.8" />
       <module name="EhCache" target="1.8" />
       <module name="SpringCache" target="1.8" />
       <module name="SpringEhCache" target="1.8" />

@@ -2,7 +2,6 @@ package personal.nathan;
 
 import net.sf.ehcache.CacheManager;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.Cache;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicLong;
@@ -29,9 +28,11 @@ public class GreetingController {
 
     @PostMapping("/setCache")
     public String setCache(@RequestBody CacheBody cacheBody) {
-        // FIXME 未拿到对象
-        Cache cache = cacheManager.getCache("test");
-        cache.put(cacheBody.getKey(), cacheBody.getValue());
-        return "YES";
+
+//        // FIXME 未拿到对象
+//        Cache cache = cacheManager.getCache("test");
+//        cache.put(cacheBody.getKey(), cacheBody.getValue());
+//        return "YES";
+        return null;
     }
 }
