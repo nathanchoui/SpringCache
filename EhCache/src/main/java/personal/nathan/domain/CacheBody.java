@@ -1,4 +1,4 @@
-package personal.nathan;
+package personal.nathan.domain;
 
 import lombok.Data;
 

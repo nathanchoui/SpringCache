@@ -3,6 +3,7 @@ package personal.nathan;
 import net.sf.ehcache.CacheManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import personal.nathan.domain.CacheBody;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -17,22 +18,10 @@ public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @Autowired
-    private CacheManager cacheManager;
-
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
     }
 
-    @PostMapping("/setCache")
-    public String setCache(@RequestBody CacheBody cacheBody) {
-
-//        // FIXME 未拿到对象
-//        Cache cache = cacheManager.getCache("test");
-//        cache.put(cacheBody.getKey(), cacheBody.getValue());
-//        return "YES";
-        return null;
-    }
 }
