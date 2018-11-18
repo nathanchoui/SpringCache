@@ -18,8 +18,16 @@
             memoryStoreEvictionPolicy = "LRU"/>
 
     <!-- 此缓存最多可以存活timeToLiveSeconds秒，如果期间超过timeToIdleSeconds秒未访问，缓存失效 -->
-    <cache
-            name = "test"
+    <cache  name = "test"
+            eternal = "false"
+            maxElementsInMemory = "100"
+            overflowToDisk = "false"
+            diskPersistent = "false"
+            timeToIdleSeconds = "120"
+            timeToLiveSeconds = "180"
+            memoryStoreEvictionPolicy = "LRU"/>
+
+    <cache  name = "user"
             eternal = "false"
             maxElementsInMemory = "100"
             overflowToDisk = "false"

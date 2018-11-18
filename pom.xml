@@ -12,7 +12,6 @@
     <modules>
         <module>CacheApp</module>
         <module>EhCache</module>
-        <module>CacheProvider</module>
         <module>CacheService</module>
     </modules>
 
@@ -26,10 +25,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.springframework.boot</groupId>-->
+                    <!--<artifactId>spring-boot-starter-logging</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -54,6 +60,7 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+
 
     </dependencies>
 
@@ -90,6 +97,45 @@
                 <artifactId>fastjson</artifactId>
                 <version>1.2.51</version>
             </dependency>
+
+            <!-- logback -->
+            <!--<dependency>-->
+                <!--<groupId>ch.qos.logback</groupId>-->
+                <!--<artifactId>logback-classic</artifactId>-->
+                <!--<version>1.2.3</version>-->
+                <!--<scope>test</scope>-->
+            <!--</dependency>-->
+            <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 &ndash;&gt;-->
+            <!--<dependency>-->
+                <!--<groupId>org.slf4j</groupId>-->
+                <!--<artifactId>slf4j-log4j12</artifactId>-->
+                <!--<version>1.7.25</version>-->
+                <!--<scope>test</scope>-->
+            <!--</dependency>-->
+            <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j &ndash;&gt;-->
+            <!--<dependency>-->
+                <!--<groupId>org.slf4j</groupId>-->
+                <!--<artifactId>jul-to-slf4j</artifactId>-->
+                <!--<version>1.7.25</version>-->
+            <!--</dependency>-->
+            <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.slf4j/slf4j-nop &ndash;&gt;-->
+            <!--<dependency>-->
+                <!--<groupId>org.slf4j</groupId>-->
+                <!--<artifactId>slf4j-nop</artifactId>-->
+                <!--<version>1.7.25</version>-->
+                <!--<scope>test</scope>-->
+            <!--</dependency>-->
+            <!--&lt;!&ndash; https://mvnrepository.com/artifact/ch.qos.logback/logback-core &ndash;&gt;-->
+            <!--<dependency>-->
+                <!--<groupId>ch.qos.logback</groupId>-->
+                <!--<artifactId>logback-core</artifactId>-->
+                <!--<version>1.2.3</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.slf4j</groupId>-->
+                <!--<artifactId>slf4j-api</artifactId>-->
+                <!--<version>1.7.25</version>-->
+            <!--</dependency>-->
 
         </dependencies>
     </dependencyManagement>

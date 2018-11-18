@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * Created by nathan.z on 18-10-30.
  */
 @Service
-public class CacheService {
+public class EhCacheManager {
 
     @Autowired
     private CacheManager cacheManager;

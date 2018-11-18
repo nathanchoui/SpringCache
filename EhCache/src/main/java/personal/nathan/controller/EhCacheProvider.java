@@ -3,7 +3,9 @@ package personal.nathan.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import personal.nathan.domain.CacheBody;
-import personal.nathan.service.CacheService;
+import personal.nathan.domain.User;
+import personal.nathan.service.EhCacheManager;
+import personal.nathan.service.UserService;
 
 /**
  * Description:
@@ -14,17 +16,25 @@ import personal.nathan.service.CacheService;
 public class EhCacheProvider {
 
     @Autowired
-    private CacheService cacheService;
+    private EhCacheManager ehCacheManager;
+
+    @Autowired
+    private UserService userService;
 
     @PutMapping("/cache")
     public String setCache(@RequestBody CacheBody cacheBody) {
-        cacheService.setCache(cacheBody.getKey(), cacheBody.getValue());
+        ehCacheManager.setCache(cacheBody.getKey(), cacheBody.getValue());
         return "Y";
     }
 
     @GetMapping("/cache/{key}")
     public Object getCache(@PathVariable("key") String key) {
-        return cacheService.getCache(key);
+        return ehCacheManager.getCache(key);
+    }
+
+    @GetMapping("/user/{id}")
+    public User user(@PathVariable("id") String id) {
+        return userService.findUser(id);
     }
 
 

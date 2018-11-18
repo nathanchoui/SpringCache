@@ -1,0 +1,3 @@
+#logging:
+#  config: classpath:logback-spring.xml
+#  path: /home/nathan/develop/log/cache_log
