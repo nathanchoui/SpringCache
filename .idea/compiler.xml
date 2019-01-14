@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="CacheApp" />
         <module name="CacheService" />
+        <module name="CaffeineCache" />
         <module name="EhCache" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="CacheApp" target="1.8" />
       <module name="CacheProvider" target="1.8" />
       <module name="CacheService" target="1.8" />
+      <module name="CaffeineCache" target="1.8" />
       <module name="EhCache" target="1.8" />
       <module name="SpringCache" target="1.8" />
       <module name="SpringEhCache" target="1.8" />
