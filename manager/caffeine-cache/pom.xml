@@ -9,7 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>CacheService</artifactId>
+    <artifactId>caffeine-cache</artifactId>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine -->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>

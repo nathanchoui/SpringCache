@@ -5,14 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>personal.nathan</groupId>
-    <artifactId>CacheApp</artifactId>
+    <artifactId>open-api-interface</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <parent>
-        <groupId>personal.nathan</groupId>
-        <artifactId>SpringCache</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
 
 </project>

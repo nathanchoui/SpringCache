@@ -10,10 +10,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>CacheApp</module>
-        <module>EhCache</module>
-        <module>CacheService</module>
-        <module>CaffeineCache</module>
+        <module>./open-api/open-api-interface</module>
+        <module>./open-api/open-api-impl</module>
+        <module>./service/cache-service</module>
+        <module>./manager/ehcache</module>
+        <module>./manager/caffeine-cache</module>
     </modules>
 
     <parent>

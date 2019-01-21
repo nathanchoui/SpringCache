@@ -6,17 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CacheApp" />
-        <module name="CacheService" />
-        <module name="service-protocol" />
+        <module name="caffeine-cache" />
+        <module name="EhCache" />
+        <module name="open-api-impl" />
+        <module name="openapiinterface" />
+        <module name="service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CacheApp" target="1.8" />
       <module name="CacheProvider" target="1.8" />
       <module name="CacheService" target="1.8" />
+      <module name="caffeine-cache" target="1.8" />
       <module name="CaffeineCache" target="1.8" />
       <module name="EhCache" target="1.8" />
+      <module name="open-api-impl" target="1.8" />
+      <module name="OpenApi" target="1.8" />
+      <module name="openapiinterface" target="1.5" />
+      <module name="service" target="1.8" />
       <module name="service-protocol" target="1.5" />
       <module name="SpringCache" target="1.8" />
       <module name="SpringEhCache" target="1.8" />

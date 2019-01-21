@@ -9,15 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>CaffeineCache</artifactId>
+    <artifactId>ehcache</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine -->
+        <!--<dependency>-->
+        <!--<groupId>org.ehcache</groupId>-->
+        <!--<artifactId>ehcache</artifactId>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>com.github.ben-manes.caffeine</groupId>
-            <artifactId>caffeine</artifactId>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>
