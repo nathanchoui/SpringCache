@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="caffeine-cache" />
-        <module name="EhCache" />
         <module name="open-api-impl" />
         <module name="openapiinterface" />
         <module name="service" />
